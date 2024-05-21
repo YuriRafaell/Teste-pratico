@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Steffany Jennyfer">
+
+    <title>Blog da Alkabot</title>
+
+    <!-- CSS do Bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS customizado do nosso blog -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Blog do Alkabot</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navegação -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Posts Recentes</li>
+        </ol>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Últimas postagens do blog -->
+            <div class="col-md-8">
+
+                <h1 class="my-4">
+                    <small>Posts Recentes</small>
+                </h1>
+
+
+                <!-- Blog Post -->
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/primeira.jpeg" alt="Card image cap">
+                    <div id="posts" class="card-body">
+                        <a href="posts/post1.html" class="btn btn-primary">Comentários &rarr;</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Postado em 1 de Janeiro de 2019 por
+                        <a href="#">João dos Anzóis </a>
+                    </div>
+                </div>
+
+                <!-- Coluna de widgets -->
+                <div class="col-md-4">
+
+                    <!-- Widget de busca -->
+                    <div class="card my-4">
+                        <h5 class="card-header" id="header-busca">Busca</h5>
+                        <div class="card-body" id="body-busca">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Digite aqui...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secondary" type="button">Buscar</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Widget de categorias -->
+                    <div class="card my-4">
+                        <h5 class="card-header" id="header-categoria">Categorias</h5>
+                        <div class="card-body" id="body-categoria">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="#">Web Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CSS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="#">JavaScript</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tutoriais</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Fim do row -->
+
+        <!-- Rodapé -->
+        <footer id="ftr" class="py-3 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Alkabot 2023</p>
+            </div>
+        </footer>
+
+        <!-- Biblioteca jQuery e Bootstrap -->
+        <script src="vendor/jquery/jquery.min.js"></script> <!--VAMOS VER SE VOU USAR-->
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <h1>Meu Blog</h1>
+        <div></div>
+        <div id="comentarios"></div>
+        
+        <!-- Nosso script JS -->
+        <script src="index.js"></script>
+</body>
+
+</html>
